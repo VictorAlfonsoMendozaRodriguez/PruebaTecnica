@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"exaamen1\",\r\n    \"questions\":[\r\n        {\r\n            \"question\" :\"dfsgdfgdfg\",\r\n            \"correctAnswer\" : \"sdfsdfsdf\",\r\n            \"score\":3,\r\n            \"answers\": [\r\n                {\"value\":\"dfgdfgdfg1.1\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg1.2\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg1.3\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg1.4\",\"index\":\"A\"}\r\n            ]\r\n        },\r\n        {\r\n            \"question\" :\"dfsgdfgdfg\",\r\n            \"correctAnswer\" : \"sdfsdfsdf\",\r\n            \"score\":4,\r\n            \"answers\": [\r\n                {\"value\":\"dfgdfgdfg2.1\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg2.2\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg2.3\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg2.4\",\"index\":\"A\"}\r\n            ]\r\n        },\r\n        {\r\n            \"question\" :\"dfsgdfgdfg\",\r\n            \"correctAnswer\" : \"sdfsdfsdf\",\r\n            \"score\":5,\r\n            \"answers\": [\r\n                {\"value\":\"dfgdfgdfg3.1\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg3.2\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg3.3\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg3.4\",\"index\":\"A\"}\r\n            ]\r\n        },\r\n        {\r\n            \"question\" :\"dfsgdfgdfg\",\r\n            \"score\":3,\r\n            \"correctAnswer\" : \"sdfsdfsdf\",\r\n            \"answers\": [\r\n                {\"value\":\"dfgdfgdfg4.1\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg4.2\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg4.3\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg4.4\",\"index\":\"A\"}\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"name\":\"Examen 1\",\r\n    \"questions\":[\r\n        {\r\n            \"question\" :\"Preegunta 1\",\r\n            \"correctAnswer\" : \"opcion1.1\",\r\n            \"score\":3,\r\n            \"answers\": [\r\n                {\"value\":\"opcion1.1\",\"index\":\"A\"},\r\n                {\"value\":\"opcion1.2\",\"index\":\"B\"},\r\n                {\"value\":\"opcion1.3\",\"index\":\"C\"},\r\n                {\"value\":\"opcion1.4\",\"index\":\"D\"}\r\n            ]\r\n        },\r\n        {\r\n            \"question\" :\"Preegunta 2\",\r\n            \"correctAnswer\" : \"opcion2.2\",\r\n            \"score\":35,\r\n            \"answers\": [\r\n                {\"value\":\"opcion2.1\",\"index\":\"A\"},\r\n                {\"value\":\"opcion2.2\",\"index\":\"B\"},\r\n                {\"value\":\"opcion2.3\",\"index\":\"C\"},\r\n                {\"value\":\"opcion2.4\",\"index\":\"D\"}\r\n            ]\r\n        },\r\n        {\r\n            \"question\" :\"Preegunta 3\",\r\n            \"correctAnswer\" : \"opcion3.2\",\r\n            \"score\":35,\r\n            \"answers\": [\r\n                {\"value\":\"opcion3.1\",\"index\":\"A\"},\r\n                {\"value\":\"opcion3.2\",\"index\":\"B\"},\r\n                {\"value\":\"opcion3.3\",\"index\":\"C\"},\r\n                {\"value\":\"opcion3.4\",\"index\":\"D\"}\r\n            ]\r\n        },\r\n        {\r\n            \"question\" :\"Preegunta 4\",\r\n            \"correctAnswer\" : \"opcion4.4\",\r\n            \"score\":25,\r\n            \"answers\": [\r\n                {\"value\":\"opcion4.1\",\"index\":\"A\"},\r\n                {\"value\":\"opcion4.2\",\"index\":\"B\"},\r\n                {\"value\":\"opcion4.3\",\"index\":\"C\"},\r\n                {\"value\":\"opcion4.4\",\"index\":\"D\"}\r\n            ]\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -71,7 +71,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"studentid\": 1,\r\n    \"examid\" : 39,\r\n    \"time\": \"02:50:21\",\r\n    \"date\":  \"2019-02-03\"\r\n}",
+					"raw": "{\r\n    \"studentid\": 1,\r\n    \"examid\" : 1,\r\n    \"time\": \"02:50:21\",\r\n    \"date\":  \"2019-02-03\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -100,7 +100,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignment\":9,\r\n    \"question\":[\r\n        {\r\n            \"questionid\": 170,\r\n            \"aswerid\":673\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"assignment\":1,\r\n    \"question\":[\r\n        {\r\n            \"questionid\": 1,\r\n            \"aswerid\":1\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -117,6 +117,27 @@
 						"api",
 						"v1",
 						"studentresponse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get score",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/Assignment/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Assignment",
+						"1"
 					]
 				}
 			},

@@ -4,7 +4,6 @@ import java.sql.Date;
 import java.sql.Time;
 
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
 
 public class AssignmentDTO {
 	
@@ -15,6 +14,15 @@ public class AssignmentDTO {
     private Integer examid;
 	private Time time;
     private Date date;
+    private int score;
+
+	public int getScore() {
+		return score;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
 
 	public Time getTime() {
 		return time;

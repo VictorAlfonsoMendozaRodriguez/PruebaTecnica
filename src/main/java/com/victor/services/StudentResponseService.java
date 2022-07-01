@@ -1,13 +1,11 @@
 package com.victor.services;
 
-import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.victor.dto.AnswerQuestionDTO;
-import com.victor.dto.QuestionDTO;
 import com.victor.dto.StudentResponseDTO;
 import com.victor.model.Assignment;
 import com.victor.model.Exam;
