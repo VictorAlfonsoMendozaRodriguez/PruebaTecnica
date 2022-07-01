@@ -10,6 +10,10 @@ to work.
 
 After the DB is installed, you will need to configure `application.properties` with your
 DB information in `\src\main\resources]`
+spring.datasource.url=jdbc:postgresql://localhost:5432/technical_test
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+
 
 #### Server Setup
 # windows check if is mvn or mvnw

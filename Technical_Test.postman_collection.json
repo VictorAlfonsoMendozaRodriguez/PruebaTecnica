@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "e169c2f3-6d94-473b-83c7-1da921226a30",
+		"name": "Technical_Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2390090"
+	},
+	"item": [
+		{
+			"name": "Create Exam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"exaamen1\",\r\n    \"questions\":[\r\n        {\r\n            \"question\" :\"dfsgdfgdfg\",\r\n            \"correctAnswer\" : \"sdfsdfsdf\",\r\n            \"score\":3,\r\n            \"answers\": [\r\n                {\"value\":\"dfgdfgdfg1.1\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg1.2\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg1.3\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg1.4\",\"index\":\"A\"}\r\n            ]\r\n        },\r\n        {\r\n            \"question\" :\"dfsgdfgdfg\",\r\n            \"correctAnswer\" : \"sdfsdfsdf\",\r\n            \"score\":4,\r\n            \"answers\": [\r\n                {\"value\":\"dfgdfgdfg2.1\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg2.2\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg2.3\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg2.4\",\"index\":\"A\"}\r\n            ]\r\n        },\r\n        {\r\n            \"question\" :\"dfsgdfgdfg\",\r\n            \"correctAnswer\" : \"sdfsdfsdf\",\r\n            \"score\":5,\r\n            \"answers\": [\r\n                {\"value\":\"dfgdfgdfg3.1\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg3.2\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg3.3\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg3.4\",\"index\":\"A\"}\r\n            ]\r\n        },\r\n        {\r\n            \"question\" :\"dfsgdfgdfg\",\r\n            \"score\":3,\r\n            \"correctAnswer\" : \"sdfsdfsdf\",\r\n            \"answers\": [\r\n                {\"value\":\"dfgdfgdfg4.1\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg4.2\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg4.3\",\"index\":\"A\"},\r\n                {\"value\":\"dfgdfgdfg4.4\",\"index\":\"A\"}\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/Exam",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Exam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Victor\",\r\n    \"age\" : 37,\r\n    \"city\": \"San Cristobal de Las Casas\",\r\n    \"timezone\":\"GMT-5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assignment Exam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentid\": 1,\r\n    \"examid\" : 39,\r\n    \"time\": \"02:50:21\",\r\n    \"date\":  \"2019-02-03\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/Assignment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"Assignment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studentresponse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"assignment\":9,\r\n    \"question\":[\r\n        {\r\n            \"questionid\": 170,\r\n            \"aswerid\":673\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/studentresponse",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"studentresponse"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
